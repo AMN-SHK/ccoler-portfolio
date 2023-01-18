@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.sharingan{
+    width: 20%;
+    filter: blur(1px) drop-shadow(0px 0px 100px rgba(255, 8, 8, 0.5));
+}
+.main h1{
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    letter-spacing: 0.5em;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    z-index: 5;
+    margin-right: -255px;
+    text-shadow: 0px 0px 35px #FFFFFF;
+}
