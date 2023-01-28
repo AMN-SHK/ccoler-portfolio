@@ -23,17 +23,18 @@ nav ul{
 a{
     text-decoration: none;
     color: white;
+    transition: 200ms ease;
+}
+a:hover{
+    text-shadow: 0px 0px 35px #FFFFFF;
 }
 .main{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 92vh;
 }
-.sharingan{
-    width: 20%;
-    filter: blur(1px) drop-shadow(0px 0px 100px rgba(255, 8, 8, 0.5));
-}
+
 .main h1{
     color: white;
     font-family: 'Cormorant SC', serif;
@@ -42,6 +43,28 @@ a{
     font-style: normal;
     font-weight: 500;
     z-index: 5;
-    margin-right: -255px;
+    margin-right: -265px;
     text-shadow: 0px 0px 35px #FFFFFF;
+}
+#sharingan{
+    width: 20%;
+    animation: sharingan 15s cubic-bezier(.34,.23,.65,.76) infinite ;
+    filter: blur(1px) drop-shadow(0px 0px 90px rgba(255, 8, 8, 0.7));
+}
+@keyframes sharingan{
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sharingan{
+        width: 70%;
+    }
 }
